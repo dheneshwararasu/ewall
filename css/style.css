@@ -43,7 +43,7 @@ format("opentype");
 }
 
 .group-2 {
-    background-image: url();
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63da4afb288f56e8e35d0a6d/releases/63da4b6dbf4aa1c07823ae25/img/group-1@1x.png);
     background-size: 100% 100%;
     height: 49px;
     left: 0;
