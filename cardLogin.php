@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php
-        $command = escapeshellcmd('python py/rfid/readCard.py'); 
+        $command = escapeshellcmd('python py/rfid/hello.py'); 
         $output= shell_exec("$command");
         echo $output;
         ?>
