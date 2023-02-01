@@ -9,12 +9,6 @@ body {
     src: url('https://fonts.cdnfonts.com/css/sf-pro-display');
   }
 
-  .bg-image {
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
-
   h1 {
     color: white;
     font-size: 60px;
@@ -25,10 +19,9 @@ body {
   }
 
   .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 600px;
-    text-align: center;
     border: 3px white;
   }
