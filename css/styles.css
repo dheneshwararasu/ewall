@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
+    filter: blur(8px);
   }
   @font-face {
     font-family: "SF Pro Display";
@@ -19,9 +20,10 @@ body {
   }
 
   .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     height: 600px;
+    text-align: center;
     border: 3px white;
   }
