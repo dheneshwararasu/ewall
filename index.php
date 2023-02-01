@@ -5,6 +5,8 @@
     </head>
     <body>
         <h1>Let's make the change now</h1>
-        <button href="cardLogin.php" >Get Started!</button>
+        <a href="cardLogin.php" >
+            <button>Get Started!</button>
+        </a>
     </body>
 </html>
