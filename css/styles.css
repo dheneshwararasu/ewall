@@ -16,3 +16,8 @@ body {
   p {
     color: red;
   }
+
+  .center {
+      text-align: center;
+      border: 3px white;
+  }
