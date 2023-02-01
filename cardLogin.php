@@ -4,6 +4,7 @@
         <title>WALL-E Kiosk | INNOVUS</title>
     </head>
     <body>
-        <h1>Please tap your TP card...</h1>
+        <?php $output= exec("py/rfid/readCard.py"); ?>
+        <h1><?php echo $output; ?></h1>
     </body>
 </html>
