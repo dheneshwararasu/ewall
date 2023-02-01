@@ -4,7 +4,7 @@
         <title>WALL-E Kiosk | INNOVUS</title>
     </head>
     <body>
-        <h1>Let's make the change now</h1>
+        <h1 style = font-family: sans-serif; text-align:center;>Let's make the change now</h1>
         <a href="cardLogin.php" >
             <button>Get Started!</button>
         </a>
