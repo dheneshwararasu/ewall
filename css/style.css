@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "SFPro-Semibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("https://fonts.animaapp.com/SFPro-Semibold")
+format("opentype");
+}
+
+.index-main-page {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    min-width: 1920px;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.overlap-group1 {
+    height: 1080px;
+    position: relative;
+    width: 1920px;
+}
+
+.overlap-group {
+    height: 49px;
+    left: 817px;
+    position: absolute;
+    top: 141px;
+    width: 285px;
+}
+
+.rectangle-3 {
+    background-color: var(--white);
+    height: 49px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 13px;
+}
+
+.group-2 {
+    background-image: url();
+    background-size: 100% 100%;
+    height: 49px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 285px;
+}
+
+.lets-make-thechange-now {
+    color: var(--white);
+    font-family: var(--font-family-sfpro-semibold);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    left: 633px;
+    letter-spacing: 0;
+    line-height: 120px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 3px 6px transparent;
+    top: 349px;
+    white-space: nowrap;
+}
+
+.rectangle-1 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: #707070;
+    border-radius: 72px;
+    height: 143px;
+    left: 635px;
+    position: absolute;
+    top: 676px;
+    width: 650px;
+}
+
+.place {
+    color: #3f504c;
+    font-family: var(--font-family-sfpro-semibold);
+    font-size: var(--font-size-s);
+    font-weight: 600;
+    left: 879px;
+    letter-spacing: 0;
+    line-height: 87px;
+    position: absolute;
+    text-align: center;
+    top: 702px;
+    white-space: nowrap;
+}
+
+.rectangle-2 {
+    -webkit-backdrop-filter: blur(8.0px) brightness(115%);
+    backdrop-filter: blur(8.0px) brightness(115%);
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+}
+
+.image-1 {
+    height: 1080px;
+    left: 1px;
+    position: absolute;
+    top: 0;
+    width: 1918px;
+}
