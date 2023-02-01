@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1 class="center">Let's make the change now</h1>
-        <a href="cardLogin.php" >
+        <a class="center" href="cardLogin.php" >
             <button>Get Started!</button>
         </a>
     </body>
