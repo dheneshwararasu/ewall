@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>WALL-E Kiosk | INNOVUS</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <h1>Let's make the change now</h1>
