@@ -41,12 +41,12 @@
 
         [Service]
         Environment=DISPLAY=:0.0
-        Environment=XAUTHORITY=/home/pi/.Xauthority
+        Environment=XAUTHORITY=/home/ewall/.Xauthority
         Type=simple
-        ExecStart=/bin/bash /home/pi/kiosk.sh
+        ExecStart=/bin/bash /home/ewall/kiosk.sh
         Restart=on-abort
-        User=pi
-        Group=pi
+        User=ewall
+        Group=innovus
 
         [Install]
         WantedBy=graphical.target
@@ -54,3 +54,32 @@
     g. sudo systemctl enable kiosk.service
     h. sudo systemctl start kiosk.service
     i. sudo systemctl status kiosk.service
+
+3. Setup web server (Apache2, PHP, MySQL)
+    a. sudo apt install apache2 -y
+    b. hostname -I
+    c. sudo usermod -a -G www-data ewall
+    d. sudo chown -R -f www-data:www-data /var/www/html
+    f. sudo apt install php7.4 libapache2-mod-php7.4 php7.4-mbstring php7.4-mysql php7.4-curl php7.4-gd php7.4-zip -y
+    g. sudo nano /var/www/html/example.php
+
+4. Setup git
+    
+
+
+    h. sudo nano /etc/apache2/sites-available/example.com.conf
+        Content
+
+        <VirtualHost *:80>
+            ServerName example.com
+            ServerAlias www.example.com
+            DocumentRoot /var/www/example.com/public_html
+            ErrorLog ${APACHE_LOG_DIR}/example.com_error.log
+            CustomLog ${APACHE_LOG_DIR}/example.com_access.log combined
+        </VirtualHost>
+
+    i. sudo mkdir -p /var/www/example.com/public_html
+    j. sudo chown -R www-data:www-data /var/www/example.com/public_html
+    k. sudo a2ensite example.com.conf
+    l. sudo systemctl reload apache2
+
