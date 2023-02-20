@@ -54,6 +54,8 @@ background-size: cover;
         </div>
         
         <div style="
+        margin-left: 5%;
+        margin-right: 5%;
         left: 0%;
         top: auto;
         right: 0%;
@@ -78,10 +80,10 @@ background-size: cover;
         -ms-flex-align: center;
         align-items: center;">
 
-        <div style="margin: 20px;">
-            <img src="img/redeemPoints.png" alt="">
+        <div style="">
+            <img style="width: 50%;" src="img/duracell.png" alt="">
         </div>
-        <div style="margin: 20px;">
+        <div style="">
             <form 
             style="
             left: 0%;
@@ -99,19 +101,128 @@ background-size: cover;
             -webkit-flex-firection: column;
             -ms-flex-direction: column;
             flex-direction: column;
-            -webkit-box-pack: center;
-            webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items:center;
-            -ms-flex-align: center;
-            align-items: center;
-            grid-row-gap: 30px;"
+            -webkit-box-pack: left;
+            webkit-justify-content: left;
+            -ms-flex-pack: left;
+            justify-content: left;
+            -webkit-box-align: left;
+            -webkit-align-items:left;
+            -ms-flex-align: left;
+            align-items: left;
+            grid-row-gap: 10px;"
             action="" method="post">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <label 
+                style="
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;" for="fname">Electronic waste type:</label>
+                <input 
+                style="width: 400px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: grey;
+                outline-color: transparent;
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                opacity: 0.5;" type="text">
+                
+                <label 
+                style="
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;" for="fname">Brand/Manufacturer:</label>
+                <input style="width: 400px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: grey;
+                outline-color: transparent;
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                opacity: 0.5;" type="text">
+                
+                <label 
+                style="
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;" for="fname">Model:</label>
+                <input style="width: 400px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: grey;
+                outline-color: transparent;
+                color: white;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                opacity: 0.5;" type="text">
+
+                <div style="
+                margin-left: 5%;
+                margin-right: 5%;
+                left: 0%;
+                top: auto;
+                right: 0%;
+                bottom: auto;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-firection: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items:center;
+                -ms-flex-align: center;
+                align-items: center;
+                grid-column-gap: 15%;">
+
+                <input 
+                style="
+                background-color: gray;
+                color: white;
+                width: 50%;
+                height: 50px;
+                border-radius: 10px;
+                border-color: transparent;
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 20px;"
+                type="button" value="Perfect!">
+
+                <input 
+                style="
+                background-color: darkred;
+                color: white;
+                width: 50%;
+                height: 50px;
+                border-radius: 10px;
+                border-color: transparent;
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 20px;"
+                type="button" value="No, this is not!">
+
+                </div>
+
+                
             </form>
         </div>
 
