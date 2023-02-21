@@ -65,19 +65,22 @@ height: 100%;"></div>
             font-weight: 400;
             font-size: 50px;
             color: white;
+            line-height: 50%;
             ">Welcome back,</h1>
             <h2 style="
             font-family: sans-serif;
             font-size: 65px;
             color: white;
+            line-height: 20%;
             word-wrap: break-word;
-
+            
             "><?php echo $row["name"] ?></h2>
             <div style="
             background-color:white;
             border-radius: 40px;
             opacity: 0.5;
             width: 90%;
+            line-height: 70px;
             padding-left: 5%;
             padding-right: 5%;">
             <h3 style="
