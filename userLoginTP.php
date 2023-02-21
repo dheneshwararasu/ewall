@@ -83,7 +83,7 @@ height: 100%;"></div>
                 -ms-flex-align: center;
                 align-items: center;
                 grid-column-gap: 30px;" 
-                method="post" action=" ">
+                method="post" action="userLoginTP_Action.php">
                     <input
                     style="
                     width: 90%;
@@ -96,7 +96,7 @@ height: 100%;"></div>
                     font-weight: 500;
                     font-size: 25px;
                     text-align: center;
-                    opacity: 0.5;" type="text" id="fname" name="fname" placeholder="TP Number">
+                    opacity: 0.5;" type="text" id="tp" name="tp" placeholder="TP Number">
                     
                     <input style="
                     background-color: transparent;
@@ -107,7 +107,7 @@ height: 100%;"></div>
                     width: 10%;
                     height: 100%;
                     border-color: transparent;
-                    " type="button" value="">
+                    " type="submit" value="">
                 </form>
             </div>
     

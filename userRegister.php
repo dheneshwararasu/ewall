@@ -107,7 +107,7 @@ height: 100%;"></div>
                     width: 10%;
                     height: 100%;
                     border-color: transparent;
-                    " type="button" value="">
+                    " type="submit" value="">
                 </form>
             </div>
     
