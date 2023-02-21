@@ -65,7 +65,6 @@ height: 100%;"></div>
             font-weight: 400;
             font-size: 50px;
             color: white;
-            line-height: 50%;
             ">Welcome back,</h1>
             <h2 style="
             font-family: sans-serif;
@@ -79,7 +78,6 @@ height: 100%;"></div>
             border-radius: 40px;
             opacity: 0.5;
             width: 90%;
-            line-height: 70px;
             padding-left: 5%;
             padding-right: 5%;">
             <h3 style="
