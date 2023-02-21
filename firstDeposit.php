@@ -59,8 +59,6 @@ height: 100%;"></div>
             $id = $row["id"];
             $points = $row["points"];
         }
-
-        mysqli_close($con);
         ?>
 
         </div>
@@ -134,6 +132,7 @@ height: 100%;"></div>
                 color: white;
                 text-decoration: none;">Make your first deposit</h1></div>
             
-            </div>  
+            </div> 
+            <?php mysqli_close($con); ?>
 </body>
 </html>
