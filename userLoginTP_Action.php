@@ -9,11 +9,14 @@ $result=mysqli_query($con,$sql);
 
 if(mysqli_num_rows($result)<=0)
 {
-    echo "<script>window.location.href='userRegister.php';</script>";
+    $newURL = 'userRegister.php?name=';
+	header('Location: '.$newURL.$tp);
 }
 if($row=mysqli_fetch_array($result))
 {
 	$_SESSION['users']=$row['name'];
-    echo "<script>window.location.href='userProfile.php';</script>";
+    $_SESSION['id']=$row['id'];
+    $newURL = 'userLogin.php?id=';
+	header('Location: '.$newURL.$id);
 }
 ?>
