@@ -44,7 +44,12 @@ height: 100%;"></div>
     -webkit-align-items:center;
     -ms-flex-align: center;
     align-items: center;">
-        <?php $tp = intval($_GET['tp']); ?>
+        <?php	
+        include("conn.php");
+
+        session_start();
+        $tp = strval($_GET['tp']); ?>
+
         <div style="
         width: auto;
         height: auto;">
@@ -56,7 +61,7 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, what's your name, <?php $tp ?>?
+                color: white;">Hi, what's your name,<?php echo $tp ?>?
             </h1>
 
             <div style="
@@ -85,7 +90,7 @@ height: 100%;"></div>
                 -ms-flex-align: center;
                 align-items: center;
                 grid-column-gap: 30px;" 
-                method="post" action="userRegister_action.php?tp=<?php $tp ?>">
+                method="post" action="userRegister_action.php?tp=<?php echo $tp ?>">
                     <input
                     style="
                     width: 90%;
@@ -114,20 +119,5 @@ height: 100%;"></div>
             </div>
     
     </div>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/chart/chart.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/showpass.js"></script>
 </body>
 </html>
