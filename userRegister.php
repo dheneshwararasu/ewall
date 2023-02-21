@@ -44,7 +44,7 @@ height: 100%;"></div>
     -webkit-align-items:center;
     -ms-flex-align: center;
     align-items: center;">
-        
+        <?php $tp = intval($_POST['tp']); ?>
         <div style="
         width: auto;
         height: auto;">
@@ -56,13 +56,13 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, what's your name?
+                color: white;">Hi, what's your name, <?php $tp ?>?
             </h1>
 
             <div style="
             width: 90%; 
             height: 10%;">
-                <?php $tp = intval($_POST['tp']); ?>
+                
                 <form 
                 style="
                 height: 100%;
