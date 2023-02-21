@@ -66,7 +66,7 @@ height: 100%;"></div>
                 line-height: 100px;
                 text-align: center;
                 color: #3F504C;
-                text-decoration: none;" href="scanTP.html">Get Started!</a>
+                text-decoration: none;" href="userLoginTP.php">Get Started!</a>
     
     </div>
 </body>

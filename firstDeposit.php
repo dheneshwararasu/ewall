@@ -109,7 +109,7 @@ height: 100%;"></div>
                 -webkit-align-items: center;
                 -ms-flex-align: center;
                 align-items: center;
-                grid-row-gap: 50px;" href="insertEWaste.html"></a>
+                grid-row-gap: 50px;" href="insertEWaste.php"></a>
                 <img  style="height: 100px; margin-top: -25px;" src="img/deposit.png" alt="">
                 <h1 style="
                 padding: 30px;

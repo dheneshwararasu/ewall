@@ -50,75 +50,67 @@ height: 100%;"></div>
         <img src="img/innovuslogo.png" alt="Innovus Logo" style="height: 50px;">
 
         </div>
-            <img style="width: 150px; margin-top: 3%;" src="img/deposit.png" alt="">
             <h1 style="
                 font-size: 50px;
-                font-weight:400;
-                font-family: sans-serif;
-                text-align: center;
-                color: white;">Insert yout e-waste into the bay.
-            </h1>
-
-            <div style="
-                width: 800px;
-                height: 100px;
-                margin-right: 10px;
-                margin-left: 10px;
-                border-radius: 50px;
-                webkit-align-self: center;
-                -ms-flex-item-align: center;
-                -ms-grid-row-align: center;
-                align-self: center;
-                background-color: grey;
-                opacity: 100%;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                -webkit-flex-direction: row;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                -webkit-box-pack: center;
-                -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -webkit-align-items: center;
-                -ms-flex-align: center;
-                align-items: center;
-                grid-row-gap: 50px;">
-                <a style="
-                position: absolute;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                width: 800px;
-                height: 100px;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                -webkit-flex-direction: row;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                -webkit-box-pack: center;
-                -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -webkit-align-items: center;
-                -ms-flex-align: center;
-                align-items: center;
-                grid-row-gap: 50px;" href="processingMV.php"></a>
-                <h1 style="
-                font-size: 40px;
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;
-                text-decoration: none;">Done</h1></div>
-            
-            </div>  
+                color: white;">Hi, what's your name?
+            </h1>
+
+            <div style="
+            width: 90%; 
+            height: 10%;">
+                <form 
+                style="
+                height: 100%;
+                padding: 10px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-firection: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items:center;
+                -ms-flex-align: center;
+                align-items: center;
+                grid-column-gap: 30px;" 
+                method="post" action=" ">
+                    <input
+                    style="
+                    width: 90%;
+                    height: 90%;
+                    border-radius: 20px;
+                    background-color: grey;
+                    outline-color: transparent;
+                    color: white;
+                    font-family: sans-serif;
+                    font-weight: 500;
+                    font-size: 25px;
+                    text-align: center;
+                    opacity: 0.5;" type="text" id="fname" name="fname" placeholder="Name as per ID">
+                    
+                    <input style="
+                    background-color: transparent;
+                    background-image: url(img/nextButton.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    width: 10%;
+                    height: 100%;
+                    border-color: transparent;
+                    " type="button" value="">
+                </form>
+            </div>
+    
+    </div>
 </body>
 </html>
