@@ -12,7 +12,7 @@ background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
 
-<?php $tp = strval($_GET['tp']); ?>
+<?php $tp = intval($_GET['tp']); ?>
 
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);

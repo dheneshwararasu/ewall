@@ -1,6 +1,6 @@
 <?php
 include("conn.php");
-$tp = strval($_GET['tp']);
+$tp = intval($_GET['tp']);
 
 $name = mysqli_real_escape_string($con, $_POST['name']);
 
