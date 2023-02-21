@@ -12,8 +12,6 @@ background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
 
-<?php $tp = intval($_GET['tp']); ?>
-
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
 backdrop-filter: blur(10px) brightness(60%);
@@ -64,6 +62,7 @@ height: 100%;"></div>
             <div style="
             width: 90%; 
             height: 10%;">
+                <?php $tp = intval($_POST['tp']); ?>
                 <form 
                 style="
                 height: 100%;
