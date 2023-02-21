@@ -48,7 +48,12 @@ height: 100%;"></div>
         width: auto;
         height: auto;">
         <img src="img/innovuslogo.png" alt="Innovus Logo" style="height: 50px;">
+        <?php	
+        include("conn.php");
 
+        session_start();
+        $tp = strval($_GET['tp']); ?>
+        
         </div>
             <h1 style="
                 font-size: 50px;

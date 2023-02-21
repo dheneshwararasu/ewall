@@ -48,7 +48,10 @@ height: 100%;"></div>
         include("conn.php");
 
         session_start();
-        $tp = strval($_GET['tp']); ?>
+        $tp = strval($_GET['tp']);
+        $result = mysqli_query($con,"SELECT * FROM users WHERE tp = '$tp'");
+        ?>
+        
 
         <div style="
         width: auto;
@@ -61,7 +64,7 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, what's your name,<?php echo $tp ?>?
+                color: white;">Hi, what's your name,<?php echo $row["name"] ?>?
             </h1>
 
             <div style="
