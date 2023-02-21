@@ -56,7 +56,7 @@ height: 100%;"></div>
         $result = mysqli_query($con,"SELECT * FROM users WHERE tp = '$tp'");
         while($row = mysqli_fetch_array($result)){
             $name = $row["name"];
-            $id = $row["id"];
+            $id = $row["no"];
             $points = $row["points"];
         }
         ?>
