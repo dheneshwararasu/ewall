@@ -54,11 +54,7 @@ height: 100%;"></div>
         session_start();
         $tp = strval($_GET['tp']);
         $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
-        while($row = mysqli_fetch_array($result)){
-            $name = $row["name"];
-            $id = $row["no"];
-            $points = $row["points"];
-        }
+        $row = mysqli_fetch_array($result);
         ?>
 
         </div>
@@ -67,7 +63,7 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, <?php echo $name ?>
+                color: white;">Hi, <?php echo $row["name"] ?>
             </h1>
 
             <div style="

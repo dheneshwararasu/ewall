@@ -215,5 +215,6 @@ height: 100%;"></div>
         text-decoration: none;">Redeem Points</h1></div>
     
     </div>
+    <?php mysqli_close($con); ?>
 </body>
 </html>
