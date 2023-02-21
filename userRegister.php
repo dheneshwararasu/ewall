@@ -11,6 +11,9 @@ margin: auto;
 background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
+
+<?php $tp = strval($_GET['tp']); ?>
+
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
 backdrop-filter: blur(10px) brightness(60%);
@@ -83,7 +86,7 @@ height: 100%;"></div>
                 -ms-flex-align: center;
                 align-items: center;
                 grid-column-gap: 30px;" 
-                method="post" action="">
+                method="post" action="userRegister_action.php?name=<?php $tp ?>">
                     <input
                     style="
                     width: 90%;
@@ -96,7 +99,7 @@ height: 100%;"></div>
                     font-weight: 500;
                     font-size: 25px;
                     text-align: center;
-                    opacity: 0.5;" type="text" id="fname" name="fname" placeholder="Name as per ID">
+                    opacity: 0.5;" type="text" id="name" name="name" placeholder="Name as per ID">
                     
                     <input style="
                     background-color: transparent;
