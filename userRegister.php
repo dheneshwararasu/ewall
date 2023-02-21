@@ -90,7 +90,7 @@ height: 100%;"></div>
                 -ms-flex-align: center;
                 align-items: center;
                 grid-column-gap: 30px;" 
-                method="post" action="userRegister_action.php?tp=<?php echo $tp ?>">
+                method="post" action="userRegister_Action.php?tp=<?php echo $tp ?>">
                     <input
                     style="
                     width: 90%;
