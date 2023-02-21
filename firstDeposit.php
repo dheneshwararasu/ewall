@@ -53,7 +53,7 @@ height: 100%;"></div>
 
         session_start();
         $tp = strval($_GET['tp']);
-        $result = mysqli_query($con,"SELECT * FROM users WHERE tp = '$tp'");
+        $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
         while($row = mysqli_fetch_array($result)){
             $name = $row["name"];
             $id = $row["no"];

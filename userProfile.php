@@ -11,6 +11,14 @@ margin: auto;
 background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
+
+<?php
+    include("conn.php");
+    session_start();
+    $id = strval($_GET['id']);
+    $result = mysqli_query($con,"SELECT * FROM `users` WHERE `no` = '$id'");
+    $row = mysqli_fetch_array($result);
+?>
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
 backdrop-filter: blur(10px) brightness(60%);
@@ -64,7 +72,7 @@ height: 100%;"></div>
             font-size: 65px;
             color: white;
             line-height: 0%;
-            ">Your Name</h2>
+            "><?php echo $row["name"] ?></h2>
             <div style="
             background-color:white;
             border-radius: 40px;
@@ -77,7 +85,7 @@ height: 100%;"></div>
             font-family: sans-serif;
             font-size: 35px;
             margin-left: 20px;
-            margin-right: 20px;">Available points: </h3>
+            margin-right: 20px;">Available points: <?php echo $row["points"] ?></h3>
             </div>
     
         </div>
