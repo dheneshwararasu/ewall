@@ -96,7 +96,7 @@ height: 100%;"></div>
                     font-weight: 500;
                     font-size: 25px;
                     text-align: center;
-                    opacity: 0.5;" type="text" id="fname" name="fname" placeholder="Name as per ID">
+                    opacity: 0.5;" type="text" id="fname" name="fname" placeholder="TP Number">
                     
                     <input style="
                     background-color: transparent;
