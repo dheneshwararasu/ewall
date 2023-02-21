@@ -55,7 +55,7 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, what's your name?
+                color: white;">Enter your TP Number
             </h1>
 
             <div style="
