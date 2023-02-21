@@ -69,7 +69,7 @@ height: 100%;"></div>
             ">Welcome back,</h1>
             <h2 style="
             font-family: sans-serif;
-            font-size: 65px;
+            font-size: 40px;
             color: white;
             line-height: 0%;
             "><?php echo $row["name"] ?></h2>
