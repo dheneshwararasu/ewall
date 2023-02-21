@@ -9,7 +9,7 @@ $result=mysqli_query($con,$sql);
 
 if(mysqli_num_rows($result)<=0)
 {
-    $newURL = 'userRegister.php?name=';
+    $newURL = 'userRegister.php?tp=';
 	header('Location: '.$newURL.$tp);
 }
 if($row=mysqli_fetch_array($result))

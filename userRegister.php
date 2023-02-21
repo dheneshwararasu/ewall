@@ -12,7 +12,7 @@ background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
 
-<?php $tp = strval($_GET['name']); ?>
+<?php $tp = intval($_GET['tp']); ?>
 
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
@@ -86,7 +86,7 @@ height: 100%;"></div>
                 -ms-flex-align: center;
                 align-items: center;
                 grid-column-gap: 30px;" 
-                method="post" action="userRegister_action.php?name=<?php $tp ?>">
+                method="post" action="userRegister_action.php?tp=<?php $tp ?>">
                     <input
                     style="
                     width: 90%;
