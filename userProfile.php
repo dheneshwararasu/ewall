@@ -71,7 +71,7 @@ height: 100%;"></div>
             font-family: sans-serif;
             font-size: 65px;
             color: white;
-            line-height: 20%;
+            line-height: auto;
             word-wrap: break-word;
             
             "><?php echo $row["name"] ?></h2>
