@@ -15,7 +15,7 @@ if(mysqli_num_rows($result)<=0)
 if($row=mysqli_fetch_array($result))
 {
 	$_SESSION['users']=$row['name'];
-    $_SESSION['id']=$row['id'];
+    $id=$row['id'];
     $newURL = 'userLogin.php?id=';
 	header('Location: '.$newURL.$id);
 }
