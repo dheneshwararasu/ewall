@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost", "root", "1234", "ewall");
+$con=mysqli_connect("localhost", "admin", "1234", "ewall");
 // Check connection
 if (mysqli_connect_errno())
 {
