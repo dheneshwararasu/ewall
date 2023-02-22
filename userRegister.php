@@ -61,7 +61,7 @@ height: 100%;"></div>
                 font-weight: bold;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Hi, what's your name,<?php echo $tp ?>?
+                color: white;">Hello! What's your name?
             </h1>
 
             <div style="
