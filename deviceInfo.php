@@ -205,7 +205,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="button" value="Perfect!">
+                type="button" value="Perfect!" href="disposalcomplete.php">
 
                 <input 
                 style="
