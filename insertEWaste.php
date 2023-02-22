@@ -51,6 +51,17 @@ height: 100%;"></div>
 
         </div>
             <img style="width: 150px; margin-top: 3%;" src="img/deposit.png" alt="">
+            
+            <?php	
+            include("conn.php");
+
+            session_start();
+            $tp = strval($_GET['depo']);
+            $tp = intval($_GET['done']);
+            $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
+            $row = mysqli_fetch_array($result);
+            ?>
+
             <h1 style="
                 font-size: 50px;
                 font-weight:400;
