@@ -1,85 +1,43 @@
 #Instructions
 
 1. Initial Setup
-    a. Install Pi OS Lite
+    a. Install Pi OS Lite (Buster)
     b. sudo apt update && sudo apt full-upgrade -y
     c. sudo apt clean
     d. sudo apt autoremove -y
 
-2. Setup Kiosk Mode
-    a. sudo apt install xdotool unclutter sed
-    b. sudo apt install chromium-browser
-    c. nano ~/kiosk.sh
-        Content
+2. Install Web Browser & Kiosk Dependencies
+    a. sudo apt install chromium-browser -y && sudo apt-get install matchbox-window-manager xautomation unclutter -y && sudo apt-get install fonts-noto-color-emoji -y
 
-        #!/bin/bash
-        xset s noblank
-        xset s off
-        xset -dpms
+3. Setup Web Server (Local)
+    a. sudo apt install apache2 -y && sudo apt install php -y && sudo apt install mariadb-server php-mysql -y
+    b. sudo mysql_secure_installation
+        i. Y to all questions (1234 as root password)
+    c. sudo apt install phpmyadmin -y && sudo phpenmod mysqli
 
-        unclutter -idle 0.5 -root &
+4.  Setup Git
+    a. sudo apt install git
+    b. sudo git clone https://github.com/dheneshwararasu/html.git
+    c. sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 
-        sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/$USER/.config/chromium/Default/Preferences
-        sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/$USER/.config/chromium/Default/Preferences
+5. Manage Web Pages (Optional)
 
-        /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk https://tuisyensuriaininfiniti.com &
-
-        while true; do
-            xdotool keydown ctrl+Next; xdotool keyup ctrl+Next;
-            sleep 10
-        done
+6. Setup Kiosk Mode
+    a. sudo apt-get install --no-install-recommends xserver-xorg -y && sudo apt-get install --no-install-recommends xinit -y && sudo apt-get install --no-install-recommends x11-xserver-utils -y
+    b.  nano ~/kiosk
     
-    d. chmod u+x ~/kiosk.sh
-    e. echo $DISPLAY
-    f. sudo nano /lib/systemd/system/kiosk.service
-        Content
+    c. Kiosk Start up Script
 
-        [Unit]
-        Description=Chromium Kiosk
-        Wants=graphical.target
-        After=graphical.target
-
-        [Service]
-        Environment=DISPLAY=:0.0
-        Environment=XAUTHORITY=/home/ewall/.Xauthority
-        Type=simple
-        ExecStart=/bin/bash /home/ewall/kiosk.sh
-        Restart=on-abort
-        User=ewall
-        Group=innovus
-
-        [Install]
-        WantedBy=graphical.target
+        #!/bin/sh
+        xset -dpms     # disable DPMS (Energy Star) features.
+        xset s off     # disable screen saver
+        xset s noblank # don't blank the video device
+        matchbox-window-manager -use_titlebar no &
+        unclutter &    # hide X mouse cursor unless mouse activated
+        chromium-browser --display=:0 --kiosk --incognito --window-position=0,0 http://127.0.0.1
     
-    g. sudo systemctl enable kiosk.service
-    h. sudo systemctl start kiosk.service
-    i. sudo systemctl status kiosk.service
-
-3. Setup web server (Apache2, PHP, MySQL)
-    a. sudo apt install apache2 -y
-    b. hostname -I
-    c. sudo usermod -a -G www-data ewall
-    d. sudo chown -R -f www-data:www-data /var/www/html
-    f. sudo apt install php7.4 libapache2-mod-php7.4 php7.4-mbstring php7.4-mysql php7.4-curl php7.4-gd php7.4-zip -y
-    g. sudo nano /var/www/html/example.php
-
-4. Setup git
-    
-
-
-    h. sudo nano /etc/apache2/sites-available/example.com.conf
-        Content
-
-        <VirtualHost *:80>
-            ServerName example.com
-            ServerAlias www.example.com
-            DocumentRoot /var/www/example.com/public_html
-            ErrorLog ${APACHE_LOG_DIR}/example.com_error.log
-            CustomLog ${APACHE_LOG_DIR}/example.com_access.log combined
-        </VirtualHost>
-
-    i. sudo mkdir -p /var/www/example.com/public_html
-    j. sudo chown -R www-data:www-data /var/www/example.com/public_html
-    k. sudo a2ensite example.com.conf
-    l. sudo systemctl reload apache2
-
+    d. nano ~/.bashrc
+        xinit /home/ewall/kiosk -- vt$(fgconsole)
+    e. sudo raspi-config
+        D2 Underscan - Enable compensation? [No]
+        S5 Boot / Auto Login - [B2 Console Autologin]

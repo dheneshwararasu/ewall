@@ -52,7 +52,7 @@ height: 100%;"></div>
         include("conn.php");
 
         session_start();
-        $tp = strval($_GET['tp']);
+        $tp = strval($_GET['success']);
         $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
         $row = mysqli_fetch_array($result);
         ?>
