@@ -128,7 +128,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text">
+                opacity: 0.5;" type="text" Value="Battery">
                 
                 <label 
                 style="
@@ -146,7 +146,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text">
+                opacity: 0.5;" type="text" value="Duracell">
                 
                 <label 
                 style="
@@ -164,7 +164,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text">
+                opacity: 0.5;" type="text" value="AA">
 
                 <div style="
                 margin-left: 5%;

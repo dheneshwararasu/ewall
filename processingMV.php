@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Wall Index</title>
-    <?php header('Refresh: 3; URL=deviceInfo.php'); ?>
+    <?php	
+    include("conn.php");
+
+    session_start();
+    $tp = strval($_GET['depo']);
+    $done = strval($_GET['done']);
+    $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
+    $row = mysqli_fetch_array($result);
+    ?>
+    <meta http-equiv="refresh" content="5; url=deviceInfo.php" />
 </head>
 <body style="
 margin: auto;
