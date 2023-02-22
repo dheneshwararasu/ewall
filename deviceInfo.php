@@ -81,7 +81,7 @@ background-size: cover;
         align-items: center;">
 
         <div style="">
-            <img style="width: 50%;" src="img/duracell.png" alt="">
+            <img style="width: 30%;" src="img/duracell.png" alt="">
         </div>
         <div style="">
             <form 
