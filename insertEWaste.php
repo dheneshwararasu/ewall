@@ -57,7 +57,6 @@ height: 100%;"></div>
 
             session_start();
             $tp = strval($_GET['depo']);
-            $tp = intval($_GET['done']);
             $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
             $row = mysqli_fetch_array($result);
             ?>
@@ -121,7 +120,7 @@ height: 100%;"></div>
                 -webkit-align-items: center;
                 -ms-flex-align: center;
                 align-items: center;
-                grid-row-gap: 50px;" href="processingMV.php"></a>
+                grid-row-gap: 50px;" href="processingMV.php?depo=<?php echo $row["tp"] ?>&done=1"></a>
                 <h1 style="
                 font-size: 40px;
                 font-weight: bold;
