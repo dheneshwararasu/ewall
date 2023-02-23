@@ -194,7 +194,7 @@ background-size: cover;
                 align-items: center;
                 grid-column-gap: 15%;">
 
-                <input 
+                <button 
                 style="
                 background-color: gray;
                 color: white;
@@ -205,7 +205,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="button" value="Perfect!" href="disposalcomplete.php">
+                href="disposalcomplete.php">Perfect!</button>
 
                 <input 
                 style="
