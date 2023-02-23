@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+import RPi.GPIO as GPIO
+import sys
 from gpiozero import LED
 from time import sleep
-import sys
 from signal import pause
 
 led = LED("GPIO17")
