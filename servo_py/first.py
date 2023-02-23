@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 
-import RPi.GPIO as GPIO
-import time
+from gpiozero import LED
+from time import sleep
 
-led = 18
+led = LED("GPIO17")
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(led, GPIO.OUT)
-
-GPIO.output(led, GPIO.HIGH)
-time.sleep(2)
-GPIO.output(led, GPIO.LOW)
-time.sleep(0.5)
-
-GPIO.cleanup()
+while True:
+    led.on()
+    sleep(1)
+    led.off()
+    sleep(1)
