@@ -12,6 +12,5 @@ GPIO.output(led, GPIO.HIGH)
 time.sleep(0.2)
 GPIO.output(led, GPIO.LOW)
 time.sleep(0.2)
-print('Switch status = ', GPIO.output(led))
 
 GPIO.cleanup()
