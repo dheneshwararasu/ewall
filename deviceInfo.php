@@ -194,7 +194,7 @@ background-size: cover;
                 align-items: center;
                 grid-column-gap: 15%;">
 
-                <button 
+                <input 
                 style="
                 background-color: gray;
                 color: white;
