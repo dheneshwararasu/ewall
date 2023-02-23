@@ -205,7 +205,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="submit" value="Perfect!" href="disposalComplete.php">
+                type="button" value="Perfect!" href="disposalComplete.php">
 
                 <input 
                 style="
@@ -218,7 +218,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="submit" value="No, this is not!">
+                type="button" value="No, this is not!">
 
                 </div>
 
