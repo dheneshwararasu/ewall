@@ -2,10 +2,8 @@
 include("conn.php");
 session_start();
 
-shell_exec("./servo_py/first.py");
-
 if ($_POST['action'] == 'Perfect!') {
-    exec("python3 servo_py/first.py")
+    exec("sudo python3 servo_py/first.py")
     $newURL = 'disposalComplete.php?id=';
 	header('Location: '.$newURL.$id);
 } else if ($_POST['action'] == 'No, this is not!') {
