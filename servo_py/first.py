@@ -15,4 +15,4 @@ while True:
 
     pause()
 #GPIO.cleanup()
-#sys.exit(0)
+sys.exit(0)
