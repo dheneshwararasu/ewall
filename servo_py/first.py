@@ -14,5 +14,5 @@ while True:
     sleep(1)
 
     pause()
-GPIO.cleanup()
-sys.exit(0)
+#GPIO.cleanup()
+#sys.exit(0)
