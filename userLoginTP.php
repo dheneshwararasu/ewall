@@ -96,7 +96,7 @@ height: 100%;"></div>
                     font-weight: 500;
                     font-size: 25px;
                     text-align: center;
-                    opacity: 0.5;" type="text" id="tp" name="tp" placeholder="TP Number">
+                    opacity: 0.5;" type="text" id="tp" name="tp" placeholder="TP Number" pattern="[A-Z0-9]{8}" required>
                     
                     <input style="
                     background-color: transparent;

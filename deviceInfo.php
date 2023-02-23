@@ -110,7 +110,7 @@ background-size: cover;
             -ms-flex-align: left;
             align-items: left;
             grid-row-gap: 10px;"
-            action="" method="post">
+            action="disposalStatus.php" method="post">
                 <label 
                 style="
                 color: white;
@@ -128,7 +128,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text" Value="Battery">
+                opacity: 0.5;" type="text" Value="Battery" readonly>
                 
                 <label 
                 style="
@@ -146,7 +146,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text" value="Duracell">
+                opacity: 0.5;" type="text" value="Duracell" readonly>
                 
                 <label 
                 style="
@@ -164,7 +164,7 @@ background-size: cover;
                 font-weight: 500;
                 font-size: 25px;
                 text-align: center;
-                opacity: 0.5;" type="text" value="AA">
+                opacity: 0.5;" type="text" value="AA" readonly>
 
                 <div style="
                 margin-left: 5%;
@@ -205,7 +205,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="submit" value="Perfect!" href="disposalComplete.php">
+                type="submit" name="action" value="Perfect!">
 
                 <input 
                 style="
@@ -218,7 +218,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="submit" value="No, this is not!">
+                type="submit" name="action" value="No, this is not!">
 
                 </div>
 
