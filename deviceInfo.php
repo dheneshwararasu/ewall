@@ -54,8 +54,8 @@ background-size: cover;
         </div>
         
         <div style="
-        margin-left: 20%;
-        margin-right: 20s%;
+        margin-left: 5%;
+        margin-right: 5%;
         left: 0%;
         top: auto;
         right: 0%;
