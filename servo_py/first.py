@@ -15,6 +15,6 @@ while True:
     sleep(1)
     
     GPIO.cleanup()
-    quit()
+    sys.exit("Exiting the code with sys.exit()!")
 
 
