@@ -14,7 +14,6 @@ while True:
     led.off()
     sleep(1)
     
-    GPIO.cleanup()
-    sys.exit()
+    pause()
 
 
