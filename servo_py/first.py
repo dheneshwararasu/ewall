@@ -12,8 +12,7 @@ while True:
     sleep(2)
     led.off()
     sleep(1)
-    
-    pause()
+
     LED.cleanup()
     exit
 
