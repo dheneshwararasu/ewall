@@ -207,7 +207,7 @@ background-size: cover;
                 font-size: 20px;"
                 href="disposalComplete.php">Perfect!</button>
 
-                <input 
+                <a 
                 style="
                 background-color: darkred;
                 color: white;
@@ -218,7 +218,7 @@ background-size: cover;
                 font-family: sans-serif;
                 font-weight: 400;
                 font-size: 20px;"
-                type="button" value="No, this is not!">
+                type="button" href="disposalComplete_Incorrect.php">No, this is not!</a>
 
                 </div>
 
