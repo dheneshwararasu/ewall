@@ -10,5 +10,8 @@ while True:
     sleep(1)
     led.off()
     sleep(1)
+    else:
+        print("ok!")
 
 GPIO.cleanup()
+sys.exit(0)
