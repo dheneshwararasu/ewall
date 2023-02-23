@@ -15,6 +15,6 @@ while True:
     
     pause()
     LED.cleanup()
-    sys.exit(0)
+    exit
 
 
