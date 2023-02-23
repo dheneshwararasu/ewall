@@ -9,10 +9,6 @@ led = LED("GPIO17")
 
 while True:
     led.on()
-    sleep(2)
-    led.off()
-    sleep(1)
-
-
-GPIO.cleanup()
-exit()
+    pause()
+    else:
+        exit()
