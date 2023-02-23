@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import RPi.GPIO as GPIO
 import sys
 from gpiozero import LED
 from time import sleep
@@ -15,5 +14,7 @@ while True:
     sleep(1)
     
     pause()
+    LED.cleanup()
+    sys.exit(0)
 
 
