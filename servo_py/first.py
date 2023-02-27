@@ -14,6 +14,7 @@ if True:
     time.sleep(1)
     GPIO.output(led, GPIO.LOW)
     time.sleep(1)
+    sys.exit(0)
 
 GPIO.cleanup()
 sys.exit(0)
