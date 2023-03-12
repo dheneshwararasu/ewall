@@ -12,5 +12,4 @@ if True:
     GPIO.output(servo, GPIO.HIGH)
     time.sleep(1)
 
-GPIO.cleanup()
 sys.exit(0)
