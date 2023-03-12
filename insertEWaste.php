@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Wall Index</title>
+    
 </head>
 <body style="
 margin: auto;
 background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
+
 <?php
-$output = shell_exec("./servo_py/blue_doorOpen.py");
-echo $output;?>
+    // specify the path to your Python script
+    $python_script_path = 'servo_py/blue_doorOpen.py';
+    
+    // execute the Python script using the exec() function
+    exec('python ' . $python_script_path, $output, $return_value);
+?>
+
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
 backdrop-filter: blur(10px) brightness(60%);
