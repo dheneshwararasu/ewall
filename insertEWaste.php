@@ -75,7 +75,7 @@ height: 100%;"></div>
                 font-weight:400;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">Insert yout e-waste into the bay.
+                color: white;">Insert your e-Waste into the bay.
             </h1>
 
             <div style="
