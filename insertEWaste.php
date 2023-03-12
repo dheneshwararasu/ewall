@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Wall Index</title>
-    <?php {hl_lines=[1]}
-    $output = shell_exec("python servo_py/blue_doorOpen.py");
-    echo $output;?>
 </head>
 <body style="
 margin: auto;
 background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
+<?php
+$output = shell_exec("python servo_py/blue_doorOpen.py");
+echo $output;?>
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
 backdrop-filter: blur(10px) brightness(60%);
