@@ -5,7 +5,7 @@ import sys
 
 servo = 18
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(servo, GPIO.OUT)
 
 if True:
