@@ -15,10 +15,9 @@ background-size: cover;
 
 <?php
     // specify the path to your Python script
-    $python_script_path = 'servo_py/blue_doorOpen.py';
-    
-    // execute the Python script using the exec() function
-    exec('python ' . $python_script_path, $output, $return_value);
+    $python_script_path = escapeshellcmd('python servo_py/blue_doorOpen.py');
+    $output = shell_exec($python_script_path);
+    echo $output;
 ?>
 
 <div style="
