@@ -129,42 +129,6 @@ background-size: cover;
                 font-size: 25px;
                 text-align: center;
                 opacity: 0.5;" type="text" Value="Battery" readonly>
-                
-                <label 
-                style="
-                color: white;
-                font-family: sans-serif;
-                font-weight: 500;
-                font-size: 25px;" for="fname">Brand/Manufacturer:</label>
-                <input style="width: 400px;
-                height: 50px;
-                border-radius: 20px;
-                background-color: grey;
-                outline-color: transparent;
-                color: white;
-                font-family: sans-serif;
-                font-weight: 500;
-                font-size: 25px;
-                text-align: center;
-                opacity: 0.5;" type="text" value="Duracell" readonly>
-                
-                <label 
-                style="
-                color: white;
-                font-family: sans-serif;
-                font-weight: 500;
-                font-size: 25px;" for="fname">Model:</label>
-                <input style="width: 400px;
-                height: 50px;
-                border-radius: 20px;
-                background-color: grey;
-                outline-color: transparent;
-                color: white;
-                font-family: sans-serif;
-                font-weight: 500;
-                font-size: 25px;
-                text-align: center;
-                opacity: 0.5;" type="text" value="AA" readonly>
 
                 <div style="
                 margin-left: 5%;
