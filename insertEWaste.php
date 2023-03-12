@@ -12,7 +12,7 @@ background-image: url(img/index-background.jpg);
 background-size: cover;
 ">
 <?php
-$output = shell_exec("python servo_py/blue_doorOpen.py");
+$output = shell_exec("./servo_py/blue_doorOpen.py");
 echo $output;?>
 <div style="
 -webkit-backdrop-filter: blur(10px) brightness(60%);
