@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import sys
 
 # Set up GPIO pins
 GPIO.setmode(GPIO.BOARD)
@@ -29,3 +30,4 @@ except KeyboardInterrupt:
 # Clean up GPIO pins
 pwm.stop()
 GPIO.cleanup()
+sys.exit()
