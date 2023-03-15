@@ -21,8 +21,8 @@ def set_position(position):
 # Move the servo back and forth
 try:
     while True:
-        set_position(0)  # move to 0 degrees
-        set_position(90)  # move to 180 degrees
+        set_position(90)  # move to 0 degrees
+        set_position(0)  # move to 180 degrees
 
 except KeyboardInterrupt:
     pass
