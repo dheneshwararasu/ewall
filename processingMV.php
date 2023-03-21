@@ -69,6 +69,12 @@ height: 100%;">
         <img src="img/innovuslogo.png" alt="Innovus Logo" style="height: 50px;">
 
         </div>
+        <?php
+            // specify the path to your Python script
+            $python_script_path = escapeshellcmd('python3 servo_py/blue_doorClose.py');
+            $output = shell_exec($python_script_path);
+            echo $output;
+        ?>
             <img style="width: 100px; margin-top: 3%;" src="img/loading.gif" alt="">
             <h1 style="
                 font-size: 50px;

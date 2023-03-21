@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-Wall Index</title>
+    <?php
+        // specify the path to your Python script
+        $python_script_path = escapeshellcmd('python3 servo_py/initialize.py');
+        $output = shell_exec($python_script_path);
+        echo $output;
+    ?>
 </head>
 <body style="
 margin: auto;
