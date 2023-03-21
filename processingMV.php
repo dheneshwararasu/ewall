@@ -14,7 +14,8 @@
     $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
     $row = mysqli_fetch_array($result);
     ?>
-    <meta http-equiv="refresh" content="5; url=deviceInfo.php" />
+    <?php
+    //<meta http-equiv="refresh" content="5; url=deviceInfo.php" /> ?>
 </head>
 <body style="
 margin: auto;
@@ -24,9 +25,26 @@ background-size: cover;
 
 <?php
     // specify the path to your Python script
-    $python_script_path = escapeshellcmd('python3 servo_py/blue_doorClose.py');
+    $python_script_path = escapeshellcmd('python3 servo_py/close door.py');
     $output = shell_exec($python_script_path);
     echo $output;
+?>
+
+<?php
+    // specify the path to your Python script
+    $mv_script_path = escapeshellcmd('python3 detect.py --source 0');
+    $mvoutput = shell_exec($mv_script_path);
+    echo $mvoutput;
+
+    if ($mvoutput == "Mobile Phones" && "Chargers" && "Battery") {
+        header('Location: deviceInfo.php');
+        exit;
+    } else {
+        header('Location: deviceNotRecognised.php');
+        exit;
+    }
+
+
 ?>
 
 <div style="
@@ -69,12 +87,6 @@ height: 100%;">
         <img src="img/innovuslogo.png" alt="Innovus Logo" style="height: 50px;">
 
         </div>
-        <?php
-            // specify the path to your Python script
-            $python_script_path = escapeshellcmd('python3 servo_py/blue_doorClose.py');
-            $output = shell_exec($python_script_path);
-            echo $output;
-        ?>
             <img style="width: 100px; margin-top: 3%;" src="img/loading.gif" alt="">
             <h1 style="
                 font-size: 50px;
