@@ -13,14 +13,18 @@ servo2 = GPIO.PWM(12,50) # pin 12 for servo2 (vertical)
 GPIO.setup(13,GPIO.OUT)
 servo3 = GPIO.PWM(13,50) # pin 12 for servo3 (door)
 
-# Start PWM running on both servos, value of 0 (pulse off)
-# initialize servo1 and servo2 to 90 and servo 3 to 0
-servo1.start(0)
-servo1.ChangeDutyCycle(7.5)
-servo2.start(0)
+# Turn servo1 to 0 and servo2  to 60
+servo1.ChangeDutyCycle(2)
+time.sleep(1)
+servo2.ChangeDutyCycle(6)
+# Wait for 2 seconds
+time.sleep(2)
+
+#return
+# Turn servo2 to 90 & servo1 back to 90
 servo2.ChangeDutyCycle(7.5)
-servo3.start(0)
-servo3.ChangeDutyCycle(2)
+time.sleep(1)
+servo1.ChangeDutyCycle(7.5)
 
 #Clean things up at the end
 servo1.stop()
