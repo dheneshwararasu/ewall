@@ -9,6 +9,9 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(13,GPIO.OUT)
 servo3 = GPIO.PWM(13,50) # pin 12 for servo3 (door)
 
+servo3.start(2)
+time.sleep(1)
+
 # Turn servo2 to 90
 servo3.ChangeDutyCycle(7.5)
 
