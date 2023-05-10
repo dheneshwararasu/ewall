@@ -11,9 +11,12 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(12,GPIO.OUT)
 servo2 = GPIO.PWM(12,50) # pin 12 for servo2 (vertical)
 
+servo2.start(7)
+time.sleep(1)
+
 # Turn servo2 to 60
-pos2 = 7.5
-dec = 0.1
+pos2 = 7
+dec = 0.05
 while pos2 > 6:
     pos2 -= 0.1
     servo2.ChangeDutyCycle(pos2)
@@ -23,7 +26,7 @@ while pos2 > 6:
 time.sleep(2)
 
 # return
-while pos2 < 7.5:
+while pos2 < 7:
     pos2 += 0.1
     servo2.ChangeDutyCycle(pos2)
     time.sleep(dec)
