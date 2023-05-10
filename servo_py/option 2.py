@@ -13,11 +13,16 @@ servo1 = GPIO.PWM(11,50) # pin 11 for servo1 (horizontal)
 GPIO.setup(12,GPIO.OUT)
 servo2 = GPIO.PWM(12,50) # pin 12 for servo2 (vertical)
 
+servo1.start(7)
+time.sleep(1)
+servo2.start(7)
+time.sleep(1)
+
 # Turn servo1 to 180 and servo2  to 60
-pos1 = 7.5
-pos2 = 7.5
+pos1 = 7
+pos2 = 7
 dec = 0.1
-while pos1 < 12.5:
+while pos1 < 12:
     pos1 += 0.1
     servo1.ChangeDutyCycle(pos1)
     time.sleep(dec)
@@ -30,11 +35,11 @@ while pos2 > 6:
 time.sleep(2)
 
 #return
-while pos1 > 7.5:
+while pos1 > 7:
     pos1 -= 0.1
     servo1.ChangeDutyCycle(pos1)
     time.sleep(dec)
-while pos2 < 7.5:
+while pos2 < 7:
     pos2 += 0.1
     servo2.ChangeDutyCycle(pos2)
     time.sleep(dec)
