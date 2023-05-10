@@ -21,7 +21,7 @@ time.sleep(1)
 # Turn servo1 to 180 and servo2  to 60
 pos1 = 7
 pos2 = 7
-dec = 0.1
+dec = 0.05
 while pos1 < 12:
     pos1 += 0.1
     servo1.ChangeDutyCycle(pos1)
@@ -35,13 +35,13 @@ while pos2 > 6:
 time.sleep(2)
 
 #return
-while pos1 > 7:
-    pos1 -= 0.1
-    servo1.ChangeDutyCycle(pos1)
-    time.sleep(dec)
 while pos2 < 7:
     pos2 += 0.1
     servo2.ChangeDutyCycle(pos2)
+    time.sleep(dec)
+while pos1 > 7:
+    pos1 -= 0.1
+    servo1.ChangeDutyCycle(pos1)
     time.sleep(dec)
 
 # Wait for 2 seconds
