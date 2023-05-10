@@ -4,6 +4,8 @@ import time
 # Set GPIO numbering mode
 GPIO.setmode(GPIO.BOARD)
 
+servo3.start(7)
+
 # Set pins 13 as outputs, and define as PWM servo3
 GPIO.setup(13,GPIO.OUT)
 servo3 = GPIO.PWM(13,50) # pin 12 for servo3 (door)
