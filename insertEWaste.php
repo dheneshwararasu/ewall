@@ -65,9 +65,9 @@ height: 100%;"></div>
             include("conn.php");
 
             session_start();
-            $tp = strval($_GET['depo']);
+            $tp = strval($_GET['id']);
             $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
-            $row = mysqli_fetch_array($result);
+            $row = mysqli_fetch_array($result);ß
             ?>
 
             <h1 style="
