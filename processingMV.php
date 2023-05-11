@@ -9,8 +9,7 @@
     include("conn.php");
 
     session_start();
-    $tp = strval($_GET['depo']);
-    $done = strval($_GET['done']);
+    $tp = strval($_GET['id']);
     $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
     $row = mysqli_fetch_array($result);
     ?>
@@ -40,7 +39,7 @@ background-size: cover;
         header('Location: deviceInfo.php');
         exit;
     } else {
-        header('Location: deviceNotRecognised.php');
+        header('Location: deviceInfo.php');
         exit;
     }
 
