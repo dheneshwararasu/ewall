@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include("conn.php");
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,9 +61,20 @@ height: 100%;">
                 font-weight:500;
                 font-family: sans-serif;
                 text-align: center;
-                color: white;">You have received INNOCOINS!
+                color: white;">You have received 100 INNOCOINS!
             </h1>
             <p style="color:white; font-size: 30px; font-family: sans-serif; font-weight: 300;">Tips: INNOCOINS can be used to redeem vouchers later.</p>
-    </div>  
+    </div>
+
+    <?php
+    $sql="INSERT INTO users(no, tp, name, points) VALUES('0', '$tp', '$name', '0') WHERE ";
+
+    if (!mysqli_query($con,$sql))
+    {
+        die('Error: ' . mysqli_error($con));
+    }
+    mysqli_close($con);
+    ?>
+      
 </body>
 </html>

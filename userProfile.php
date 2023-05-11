@@ -143,7 +143,7 @@ height: 100%;"></div>
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        grid-row-gap: 50px;" href="insertEWaste.php"></a>
+        grid-row-gap: 50px;" href="insertEWaste.php?id=<?php echo $row["tp"] ?>"></a>
         <img  style="height: 200px;" src="img/deposit.png" alt="">
         <h1 style="
         font-size: 50px;
