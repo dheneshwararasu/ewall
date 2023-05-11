@@ -67,7 +67,7 @@ height: 100%;"></div>
             session_start();
             $tp = strval($_GET['id']);
             $result = mysqli_query($con,"SELECT * FROM `users` WHERE `tp` = '$tp'");
-            $row = mysqli_fetch_array($result);ß
+            $row = mysqli_fetch_array($result);
             ?>
 
             <h1 style="
